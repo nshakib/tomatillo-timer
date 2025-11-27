@@ -1,13 +1,138 @@
-# React + Vite
+# Tomatillo Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and powerful productivity timer inspired by the Pomodoro Technique, designed to help you stay focused, manage your breaks, and track your progress.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Table of Contents
 
-## Expanding the ESLint configuration
+* [Overview](#overview)
+* [Features](#features)
+* [Timer Durations](#timer-durations)
+* [Tech Stack](#tech-stack)
+* [Getting Started](#getting-started)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# tomatillo-timer
+  * [Installation](#installation)
+  * [Run the Project](#run-the-project)
+* [Project Structure](#project-structure)
+* [Future Improvements](#future-improvements)
+* [License](#license)
+
+---
+
+## 🌿 Overview
+
+**Tomatillo Timer** is a productivity tool built to improve focus using timed work sessions and breaks. It includes customizable study sessions, break timers, optional background music, and a clean user interface for distraction‑free productivity.
+
+---
+
+## ✨ Features
+
+* **Study Timer** – Focused work time (default 25 minutes)
+* **Short Break** – Quick refresh break (default 5 minutes)
+* **Long Break** – Full recovery break (default 15 minutes)
+* **Background Music** – Calm ambient loops to help create a flow state
+* **Responsive UI** – Works on desktop and mobile
+* **Clean Design** – Minimal interface for maximum productivity
+
+---
+
+## ⏱️ Timer Durations (Defaults)
+
+| Mode        | Duration   |
+| ----------- | ---------- |
+| Study       | 25 minutes |
+| Short Break | 5 minutes  |
+| Long Break  | 15 minutes |
+
+> You can adjust these durations inside the settings (future feature).
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React
+* **Styling:** Tailwind CSS
+* **State Management:** useState, useEffect
+* **Audio:** YouTube Iframe API
+
+---
+
+## 🚀 Getting Started
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/tomatillo-timer.git
+cd tomatillo-timer
+npm install
+```
+
+### Run the Project
+
+```bash
+npm run dev
+```
+
+The app will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 📁 Project Structure
+
+```
+📦 tomatillo-timer
+ ┣ 📂 public
+ ┣ 📂 src
+ ┃ ┣ 📂 components
+ ┃ ┣ 📂 utils
+ ┃ ┗ 📂 pages
+ ┣ 📜 package.json
+ ┣ 📜 README.md
+ ┗ 📜 vite.config.js
+```
+
+---
+
+## 🌱 Future Improvements
+
+These features are planned or recommended for future updates:
+
+### 📝 Notes
+
+* Add a built‑in notes section to write thoughts or tasks during sessions.
+
+### ⚙️ Settings
+
+* Customize study/break durations
+* Change background music
+* Toggle sound alerts
+* Light/Dark mode
+
+### 📊 Progress Tracking
+
+* Track total study hours
+* View weekly/monthly graphs
+* Session history log
+
+### 🔐 Login System
+
+* User authentication
+* Sync settings + progress in cloud
+* Multiple devices support
+
+### ✔️ Integrated Todo List
+
+* Add tasks
+* Mark tasks as completed
+* Attach tasks to study sessions
+
+---
+
+## 📄 License
+
+This project is open-source under the **MIT License**.
